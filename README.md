@@ -85,3 +85,7 @@ instalamos angular
 
 En el directorio actual 
 ng new app --directory=. --routing --style=css
+
+para crear un nuevo componente tenemos el siguiente comando
+
+ng XXXXXX component features/XXXXXX --standalone
