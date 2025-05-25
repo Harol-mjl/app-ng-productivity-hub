@@ -1,8 +1,14 @@
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideRouter, Routes} from '@angular/router';
+import { TodoComponent } from './features/todo/todo.component';
 
-import { routes } from './app.routes';
+export const routes: Routes = [
+  {path: 'todo', component: TodoComponent},
+  {path: '', redirectTo: 'todo', pathMatch: 'full'},
+];
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes)]
+  providers: [
+    provideZoneChangeDetection({ eventCoalescing: true }), 
+    provideRouter(routes)]
 };
