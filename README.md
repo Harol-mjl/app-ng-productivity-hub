@@ -57,3 +57,31 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Inicio de un app en Angular
+
+Como es el primer proyecto se necesita guardar un manual para crear proyectos posteriores
+
+1 descargar node 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
+\. "$HOME/.nvm/nvm.sh"
+nvm install 22
+
+comprobamos 
+❯ node -v
+v22.16.0
+
+❯ npm -v
+10.9.2
+
+actualizamos npm 
+npm install -g npm@latest
+❯ npm -v
+11.4.1
+
+instalamos angular
+
+❯ npm install -g @angular/cli
+
+En el directorio actual 
+ng new app --directory=. --routing --style=css
